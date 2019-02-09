@@ -47,6 +47,7 @@ fact: (onTop disk2 base1)
 fact: (onTop disk1 disk2)
 
 fact: (larger disk3 disk1)
+fact: (larger disk3 disk2)
 
 fact: (empty peg2)
 

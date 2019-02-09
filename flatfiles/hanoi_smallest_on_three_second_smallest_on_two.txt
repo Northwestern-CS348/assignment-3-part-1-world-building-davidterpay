@@ -54,5 +54,5 @@ fact: (larger disk3 disk2)
 
 rule: ((inst ?x Disk) (inst ?y Disk) (onTop ?x ?y)) -> (larger ?y ?x)
 rule: ((inst ?x Disk) (inst ?y Disk) (inst ?y Disk) (larger ?x ?y) (larger ?y ?z)) -> (larger ?x ?z)
-rule: ((inst ?x Disk) (topStack ?x ?y) (inst ?y Peg) (empty ?z) (inst ?z Peg)) -> (movable ?x ?y ?z)
+rule: ((inst ?x Disk) (inst ?y Peg) (topStack ?x ?y) (inst ?z Peg) (empty ?z)) -> (movable ?x ?y ?z)
 rule: ((inst ?x Disk) (inst ?y Disk) (larger ?y ?x) (inst ?i Peg) (on ?x ?i) (topStack ?x ?i) (inst ?d Peg) (on ?y ?d) (topStack ?y ?d)) -> (movable ?x ?i ?d)
